@@ -37,3 +37,43 @@ backtester-demo/
 ├── run_demo.py          # Demo runner
 ├── sample_signals.csv   # Example signal stream
 └── README.md            # Documentation
+
+📊 Example Output
+
+=== BACKTEST TIMELINE (last 10 rows) ===
+          time   price  signal  position  avg_price  realized_pnl  equity
+...       ...    ...      ...      ...       ...          ...       ...
+
+=== BACKTEST STATS ===
+start_equity: 0.0
+end_equity: 0.0
+net_pl: 0.0
+total_steps: 14
+total_trades: X
+wins: Y
+losses: Z
+max_drawdown: -0.0...
+
+🧠 About This Project
+
+This demo represents the "lab layer" of a trading system:
+
+connecting signals to an execution model
+
+generating equity curves
+
+quantifying performance in a repeatable way
+
+In my larger RhythmCore system, this kind of backtesting engine is wired to:
+
+emotional/behavioral indicators
+
+regime maps
+
+strategy logic
+
+execution engines
+
+All working together as independent, testable modules.
+
+
